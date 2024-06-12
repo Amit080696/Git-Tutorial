@@ -1,1 +1,82 @@
+# Initialize a new Git repository
+git init
+
+# Clone an existing repository
+git clone <repository_url>
+
+# Add changes to the staging area
+git add <file_name>   # Add a specific file
+git add .             # Add all changes in the current directory
+
+# Commit changes with a message
+git commit -m "Commit message"
+
+# Push changes to a remote repository
+git push origin <branch_name>   # Push to a specific branch
+
+# Pull updates from a remote repository
+git pull origin <branch_name>   # Pull updates from a specific branch
+
+# Check the status of your working directory
+git status
+
+# View the commit history
+git log
+
+# Create a new branch
+git branch <branch_name>
+
+# Switch to a different branch
+git checkout <branch_name>
+
+# Create and switch to a new branch
+git checkout -b <branch_name>
+
+# Merge a branch into the current branch
+git merge <branch_name>
+
+# Delete a branch
+git branch -d <branch_name>   # Delete a local branch
+git push origin --delete <branch_name>   # Delete a remote branch
+
+# View all branches
+git branch        # View local branches
+git branch -a     # View all branches, including remote
+
+# View differences between commits or branches
+git diff          # Show changes in the working directory
+git diff <branch_name>   # Show changes between the current branch and another branch
+
+# Stash changes (temporarily save changes without committing)
+git stash
+git stash apply   # Apply the stashed changes
+git stash list    # List all stashes
+
+# Revert changes
+git checkout -- <file_name>   # Discard changes in a working directory file
+git reset HEAD <file_name>    # Unstage a file
+
+# Rebase a branch
+git rebase <branch_name>   # Reapply commits on top of another base branch
+
+# Tagging a commit
+git tag <tag_name>   # Create a new tag
+git push origin <tag_name>   # Push a tag to the remote repository
+
+# Fetch updates from the remote repository without merging
+git fetch
+
+# Show information about a remote repository
+git remote -v
+
+# Remove a file from the staging area and the working directory
+git rm <file_name>
+git rm --cached <file_name>   # Remove a file from the staging area only
+
+# Rename a file
+git mv <old_file_name> <new_file_name>
+
+# Configure Git (set global username and email)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 
